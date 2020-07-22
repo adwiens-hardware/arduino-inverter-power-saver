@@ -1,5 +1,5 @@
 # arduino-inverter-power-saver
-This project turns an inverter on/off based on the temperature of an AC mini fridge to save power in camper vans.
+This project turns an inverter on only when the fridge is on to save power in camper vans.
 ## Motivation
 When using an AC refrigerator off-grid, e.g. in a camper van, most of the power that's wasted compared to an equivalent DC fridge comes from idling the AC inverter for long periods of time. This project solves that problem.
 ## What it does
