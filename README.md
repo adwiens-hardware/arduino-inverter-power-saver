@@ -13,4 +13,4 @@ If the fridge runs for 10 minutes every hour on average = 4 hours per day, inste
 ## A helpful tip
 While you have the inverter opened up to solder the two wires to the on/off switch, it's a good idea to remove the piezo beeper with pliers so that it doesn't make any noise. Why manufacturers make inverters noisy is beyond me, it's pretty obvious that there is fault when your power goes out, so there's really no need for any beeping. Maybe there is a government regulation that inverters have to beep? ¯\_(ツ)_/¯
 
-- Drew
+~ Drew
