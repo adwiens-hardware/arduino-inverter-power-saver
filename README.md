@@ -10,3 +10,7 @@ Fridges have mechanical thermostats that switch the compressor on/off based on t
 When the relay is connected in parallel with the existing on/off switch in the inverter, the user can still turn the inverter on when they need it. This is fine because the fridge's thermostat is what controls when the fridge runs. In other words, this circuit does not impede normal operation of the inverter. It only prevents the user from being able to turn off the inverter when the fridge is running, which is what you would want anyway.
 ## Example power savings
 If the fridge runs for 10 minutes every hour on average = 4 hours per day, instead of idling the inverter for ~20 hours per day, with this project the inverter will idle for at most 8 seconds every 5 minutes for ~20 hours ~= 240 times per day x 8 seconds ~= 32 minutes per day, which saves ~19.5 hours of inverter idling time. So, for an inverter that draws 1 amp at idle, which is pretty accurate for many inverters, this project saves about 19.5 hours x 1 amp = *19.5 amp-hours* at 12 volts. That is a lot of valuable power when running off batteries and solar!
+## A helpful tip
+While you have the inverter opened up to solder the two wires to the on/off switch, it's a good idea to remove the piezo beeper with pliers so that it doesn't make any noise. Why manufacturers make inverters noisy is beyond me, it's pretty obvious that there is fault when your power goes out, so there's really no need for any beeping. Maybe there is a government regulation that inverters have to beep? ¯\_(ツ)_/¯
+
+- Drew
