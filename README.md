@@ -5,7 +5,7 @@ When using an AC fridge in a camper van, most of the power that's wasted compare
 ## What it does
 Every 5 minutes, the Arduino turns on the inverter for 8 seconds and leaves it on until no AC current is detected.
 ## How it works
-Fridges have mechanical thermostats that switch the compressor on/off based on temperature, so when the fridge is off no current flows.
+Fridges have mechanical thermostats that switch the compressor on/off based on temperature. When the fridge is too warm, the thermostat switch is on and the fridge immediately starts running when the Arduino turns on the inverter. When the fridge is cold enough, the thermostat switch is off and no current flows, so the Arduino turns off the inverter to save power.
 ## The inverter can still be used as normal
 When the relay is connected in parallel with the existing on/off switch in the inverter, the user can still turn the inverter on when they need it. This is fine because the fridge's thermostat is what controls when the fridge runs. In other words, this circuit does not impede normal operation of the inverter.
 ## Example power savings
