@@ -1,9 +1,9 @@
 # arduino-inverter-power-saver
 This project turns an inverter on only when the fridge is on to save power in camper vans.
-## Motivation
-When using an AC refrigerator off-grid, e.g. in a camper van, most of the power that's wasted compared to an equivalent DC fridge comes from idling the AC inverter for long periods of time. This project solves that problem.
 ## What it does
 Every 5 minutes, the Arduino turns the AC inverter on and leaves it on until no AC current to the fridge is detected.
+## Motivation
+When using an AC refrigerator off-grid, e.g. in a camper van, most of the power that's wasted compared to an equivalent DC fridge comes from idling the AC inverter for long periods of time. This project solves that problem.
 ## How it works
 Fridges have mechanical thermostats that switch the compressor on/off based on temperature. When the fridge is too warm, the thermostat switch is on and the fridge immediately starts running when the Arduino turns on the inverter. When the fridge is cold enough, the thermostat switch is off and no current flows, so the Arduino turns off the inverter to save power.
 ## The inverter can still be used as normal
