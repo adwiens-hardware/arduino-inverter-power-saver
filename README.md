@@ -1,7 +1,7 @@
 # arduino-inverter-power-saver
+This project turns an inverter on only when the fridge is on to save power in camper vans.
 ![Schematic](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/fridge-serial-sc-sens.PNG)
 ![Photo](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/photo_sm.jpg)
-This project turns an inverter on only when the fridge is on to save power in camper vans.
 
 [Arduino Code](https://github.com/adwiens-hardware/arduino-inverter-power-saver/blob/master/fridge-serial-ac-sens.ino)
 ## What it does
