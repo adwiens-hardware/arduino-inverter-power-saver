@@ -2,11 +2,9 @@
 
 This project turns an inverter on only when the fridge is on to save power in camper vans.
 
-![Schematic](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/fridge-serial-sc-sens.PNG)
-
-![Photo](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/photo_sm.jpg)
-
 [Arduino Code](https://github.com/adwiens-hardware/arduino-inverter-power-saver/blob/master/fridge-serial-ac-sens.ino)
+
+![Schematic](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/fridge-serial-sc-sens.PNG)
 ## What it does
 Every 5 minutes, the Arduino turns the AC inverter on and leaves it on until no AC current to the fridge is detected.
 ## Motivation
@@ -19,6 +17,9 @@ When the relay is connected in parallel with the existing on/off switch in the i
 If the fridge runs for 10 minutes every hour on average = 4 hours per day, instead of idling the inverter for ~20 hours per day, with this project the inverter will idle for at most 8 seconds every 5 minutes for ~20 hours ~= 240 times per day x 8 seconds ~= 32 minutes per day, which saves ~19.5 hours of inverter idling time. So, for an inverter that draws 1 amp at idle, which is pretty accurate for many inverters, that's about 20 amp-hours saved per day, at 12 volts.
 ## Measurements
 I measured 60 watts from my standard 1.7 cu ft AC mini fridge when the compressor was running, which is very similar to claims for DC fridges of similar size in Amazon reviews. With this Arduino circuit, I've found that the fridge + inverter uses ~65 amp-hours per day in the summer when temperatures are in the 90's F, which I've found is fully recharged by 2x100 watt solar panels during sunny days. It will use less power when it's cooler outside, because the fridge will run less.
+
+![Photo](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/photo_sm.jpg)
+
 ## Choosing an inverter
 My inverter is a pure sine inverter. I tested the fridge on a modified sine inverter, and that did not work well. The fridge had to run a lot longer to cool the same amount, and the compressor got much hotter. So I recommend a pure sine inverter.
 ## A helpful tip
