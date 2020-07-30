@@ -13,7 +13,9 @@ When using an AC refrigerator off-grid, e.g. in a camper van, most of the power 
 Fridges have mechanical thermostats that switch the compressor on/off based on temperature. When the fridge is too warm, the thermostat switch is on and the fridge immediately starts running when the Arduino turns on the inverter. When the fridge is cold enough, the thermostat switch is off and no current flows, so the Arduino turns off the inverter to save power.
 ## The inverter can still be used as normal
 When the relay is connected in parallel with the existing on/off switch in the inverter, the user can still turn the inverter on when they need it. This is fine because the fridge's thermostat is what controls when the fridge runs. In other words, this circuit does not impede normal operation of the inverter. It only prevents the user from being able to turn off the inverter when the fridge is running, which is what you would want anyway.
+
 ![Photo of Inverter Wires](https://github.com/adwiens-hardware/arduino-inverter-power-saver/raw/master/inverter-wires.jpg)
+
 ## Example power savings
 If the fridge runs for 10 minutes every hour on average = 4 hours per day, instead of idling the inverter for ~20 hours per day, with this project the inverter will idle for at most 8 seconds every 5 minutes for ~20 hours ~= 240 times per day x 8 seconds ~= 32 minutes per day, which saves ~19.5 hours of inverter idling time. So, for an inverter that draws 1 amp at idle, which is pretty accurate for many inverters, that's about 20 amp-hours saved per day, at 12 volts.
 ## Measurements
